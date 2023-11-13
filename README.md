@@ -46,19 +46,25 @@ Follow these steps to get the project up and running on your local machine.
 
 4. Set up the database:
 
-- Create a PostgreSQL database named **todo_crud_api**.
+- Create a PostgreSQL database named `todo_crud_api`.
 
-5. Configure the database connection:
+- Create a `.env` file in the project root and add the following configuration:
 
-- Open the **src/db/database.js** file and update the database connection details (e.g., username, password, host, port).
+```bash
+DB_NAME=todo_crud_api
+DB_USER=your_postgres_userID
+DB_PASSWORD=your_postgres_password
+DB_HOST=your_postgres_host
+PORT=PORT_which_u_want_to_run
+```
 
-6. Start the server:
+5. Start the server:
 
 ```bash
 npm start
 ```
 
-The server should now be running at **http://localhost:8000.**
+The server should now be running at **http://localhost:8000.** Or Your .env Port
 
 ## API Endpoints
 

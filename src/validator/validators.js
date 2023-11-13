@@ -1,8 +1,8 @@
 const yup = require('yup');
 
 const todoBodySchema = yup.object().shape({
-    isCompleted: yup.boolean().required(),
     text: yup.string().required(),
+    isCompleted: yup.boolean().required(),
 });
 
 const idSchema = yup.object().shape({
